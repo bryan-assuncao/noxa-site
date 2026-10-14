@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 12 250 64" fill="none" stroke="currentColor" stroke-width="12" aria-label="noxa">
+  <path d="M12 66V44a22 22 0 0 1 44 0v22"/>
+  <rect x="72" y="22" width="48" height="44" rx="22"/>
+  <path d="M136 22l42 44M178 22l-42 44"/>
+  <rect x="194" y="22" width="44" height="44" rx="22"/>
+  <path d="M238 22v44"/>
+</svg>

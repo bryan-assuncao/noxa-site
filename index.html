@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Noxa | Sites, Google Meu Negócio e Tráfego Pago</title>
+  <meta name="description" content="A Noxa cria sites institucionais, coloca sua empresa no Google e faz campanhas no Meta Ads e Google Ads para pessoas físicas e empresas.">
+  <meta property="og:title" content="Noxa | Sua presença digital, do zero ao cliente">
+  <meta property="og:description" content="Sites institucionais, Google Meu Negócio e anúncios no Meta Ads e Google Ads.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="topo">
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.2z"/></symbol>
+  </svg>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#topo" class="logo" aria-label="Noxa — início">
+        <svg viewBox="0 12 250 64" fill="none" stroke="currentColor" stroke-width="12" aria-hidden="true">
+          <path d="M12 66V44a22 22 0 0 1 44 0v22"/>
+          <rect x="72" y="22" width="48" height="44" rx="22"/>
+          <path d="M136 22l42 44M178 22l-42 44"/>
+          <rect x="194" y="22" width="44" height="44" rx="22"/>
+          <path d="M238 22v44"/>
+        </svg>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#processo">Como funciona</a>
+        <a href="#para-quem">Para quem</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="#" class="btn btn--primary btn--sm js-whatsapp">Fale com a gente</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <p class="eyebrow">Agência digital para pessoas e empresas</p>
+        <h1>Sua marca encontrada, lembrada e <span class="accent">escolhida</span>.</h1>
+        <p class="hero__lead">
+          A Noxa cria o seu site, coloca o seu negócio no Google e faz os anúncios que levam clientes até você.
+          Tudo em um só lugar, sem complicação.
+        </p>
+        <div class="hero__actions">
+          <a href="#" class="btn btn--primary js-whatsapp">Pedir orçamento grátis</a>
+          <a href="#servicos" class="btn btn--ghost">Ver serviços</a>
+        </div>
+
+        <ul class="hero__pills" aria-label="O que fazemos">
+          <li>Sites institucionais</li>
+          <li>Google Meu Negócio</li>
+          <li>Meta Ads</li>
+          <li>Google Ads</li>
+        </ul>
+      </div>
+      <div class="hero__glow" aria-hidden="true"></div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Serviços</p>
+          <h2>Três frentes para colocar você no mapa</h2>
+          <p>Escolha um serviço ou leve os três juntos.</p>
+        </header>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8M12 18v3"/></svg>
+            </div>
+            <h3>Site institucional</h3>
+            <p>Um site profissional que transforma visitas em clientes.</p>
+            <div class="price">
+              <span class="price__from">a partir de</span>
+              <strong class="price__value">R$ 697</strong>
+              <span class="price__note">pagamento único</span>
+            </div>
+            <ul class="checklist">
+              <li>Design exclusivo</li>
+              <li>Perfeito no celular</li>
+              <li>Botão de WhatsApp</li>
+              <li>Domínio e hospedagem</li>
+            </ul>
+            <a href="#" class="btn btn--whatsapp btn--block card__cta js-whatsapp" data-servico="Site institucional"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg>Quero um site</a>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            </div>
+            <h3>Empresa no Google</h3>
+            <p>Apareça no Google Maps e nas buscas da sua região.</p>
+            <div class="price">
+              <span class="price__from">a partir de</span>
+              <strong class="price__value">R$ 197</strong>
+              <span class="price__note">pagamento único</span>
+            </div>
+            <ul class="checklist">
+              <li>Perfil criado e verificado</li>
+              <li>Fotos, horários e serviços</li>
+              <li>Otimizado para buscas locais</li>
+              <li>Mais avaliações de clientes</li>
+            </ul>
+            <a href="#" class="btn btn--whatsapp btn--block card__cta js-whatsapp" data-servico="Empresa no Google"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg>Quero aparecer no Google</a>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M15 9a4 4 0 0 1 0 6M18 6a8 8 0 0 1 0 12"/></svg>
+            </div>
+            <h3>Tráfego pago</h3>
+            <p>Anúncios que levam os clientes certos até você.</p>
+            <div class="price">
+              <span class="price__from">a partir de</span>
+              <strong class="price__value">R$ 397<small>/mês</small></strong>
+              <span class="price__note">verba dos anúncios à parte</span>
+            </div>
+            <ul class="checklist">
+              <li>Instagram e Facebook</li>
+              <li>Google e YouTube</li>
+              <li>Artes e textos inclusos</li>
+              <li>Relatório mensal</li>
+            </ul>
+            <a href="#" class="btn btn--whatsapp btn--block card__cta js-whatsapp" data-servico="Tráfego pago"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg>Quero anunciar</a>
+          </article>
+        </div>
+
+        <div class="combo reveal">
+          <div class="combo__text">
+            <span class="tag tag--accent">Mais vantajoso</span>
+            <h3>Pacote completo</h3>
+            <p>Site + Google + 1º mês de anúncios</p>
+          </div>
+          <div class="combo__price">
+            <div class="price">
+              <span class="price__from"><s>R$ 1.291</s></span>
+              <strong class="price__value">R$ 999</strong>
+            </div>
+            <a href="#" class="btn btn--whatsapp js-whatsapp" data-servico="Pacote completo"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg>Quero o pacote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESSO -->
+    <section class="section section--alt" id="processo">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Como funciona</p>
+          <h2>Do primeiro papo ao primeiro cliente</h2>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">1</span>
+            <h3>Conversa</h3>
+            <p>Entendemos o seu negócio, seu público e seus objetivos. Sem compromisso.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">2</span>
+            <h3>Proposta</h3>
+            <p>Você recebe um plano claro, com prazo e valor definidos antes de começar.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">3</span>
+            <h3>Execução</h3>
+            <p>Criamos tudo e você acompanha e aprova cada etapa.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">4</span>
+            <h3>No ar e crescendo</h3>
+            <p>Publicamos, medimos os resultados e ajustamos para melhorar sempre.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PARA QUEM -->
+    <section class="section" id="para-quem">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Para quem</p>
+          <h2>Para você e para a sua empresa</h2>
+        </header>
+
+        <div class="audience">
+          <article class="audience__item reveal">
+            <div class="audience__head">
+              <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
+              <div>
+                <h3>Pessoa física</h3>
+                <p>Profissionais autônomos e liberais</p>
+              </div>
+            </div>
+            <ul class="pill-list">
+              <li>Médicos</li>
+              <li>Dentistas</li>
+              <li>Advogados</li>
+              <li>Psicólogos</li>
+              <li>Personal trainers</li>
+              <li>Fotógrafos</li>
+            </ul>
+          </article>
+
+          <article class="audience__item reveal">
+            <div class="audience__head">
+              <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-5h6v5M9 10h.01M15 10h.01"/></svg></span>
+              <div>
+                <h3>Empresa</h3>
+                <p>Pequenos e médios negócios</p>
+              </div>
+            </div>
+            <ul class="pill-list">
+              <li>Comércios</li>
+              <li>Clínicas</li>
+              <li>Restaurantes</li>
+              <li>Escritórios</li>
+              <li>Prestadores de serviço</li>
+              <li>Indústrias</li>
+            </ul>
+          </article>
+        </div>
+
+        <ul class="benefits">
+          <li class="reveal">
+            <span class="benefits__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+            <div><strong>Atendimento direto</strong><span>Fale com quem faz</span></div>
+          </li>
+          <li class="reveal">
+            <span class="benefits__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 12V8H6a2 2 0 0 1 0-4h12v4"/><path d="M4 6v12a2 2 0 0 0 2 2h14v-4"/><path d="M18 12a2 2 0 0 0 0 4h4v-4z"/></svg></span>
+            <div><strong>Preço justo</strong><span>Sem surpresas</span></div>
+          </li>
+          <li class="reveal">
+            <span class="benefits__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
+            <div><strong>Foco em resultado</strong><span>Mais clientes para você</span></div>
+          </li>
+          <li class="reveal">
+            <span class="benefits__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg></span>
+            <div><strong>Suporte contínuo</strong><span>Ajustes e dúvidas</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt" id="faq">
+      <div class="container container--narrow">
+        <header class="section__head">
+          <p class="eyebrow">Dúvidas frequentes</p>
+          <h2>Perguntas que sempre aparecem</h2>
+        </header>
+
+        <div class="faq">
+          <details>
+            <summary>Quanto tempo leva para o meu site ficar pronto?</summary>
+            <p>Um site institucional costuma ficar pronto entre 7 e 20 dias, dependendo do número de páginas e da rapidez no envio dos textos e fotos.</p>
+          </details>
+          <details>
+            <summary>Preciso já ter domínio e hospedagem?</summary>
+            <p>Não. Ajudamos você a registrar o domínio (ex.: suaempresa.com.br) e cuidamos da hospedagem e do certificado de segurança.</p>
+          </details>
+          <details>
+            <summary>Não tenho endereço físico. Posso aparecer no Google?</summary>
+            <p>Sim. O Google Meu Negócio permite cadastrar empresas que atendem em uma área de cobertura sem mostrar o endereço.</p>
+          </details>
+          <details>
+            <summary>Quanto preciso investir em anúncios?</summary>
+            <p>Dá para começar com pouco. Definimos juntos um valor diário que caiba no seu orçamento. Esse valor é pago direto às plataformas (Meta e Google), separado da nossa gestão.</p>
+          </details>
+          <details>
+            <summary>Posso contratar só um dos serviços?</summary>
+            <p>Pode. Cada serviço funciona sozinho, mas combinados eles dão um resultado bem maior.</p>
+          </details>
+          <details>
+            <summary>Vou conseguir editar o site depois?</summary>
+            <p>Sim. Se preferir, também fazemos as alterações para você com um plano de manutenção.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section" id="contato">
+      <div class="container contact">
+        <p class="eyebrow">Contato</p>
+        <h2>Vamos tirar sua ideia do papel?</h2>
+        <p class="contact__lead">Chama a gente no WhatsApp e conte um pouco sobre você ou seu negócio. Respondemos rápido, normalmente no mesmo dia.</p>
+
+        <a href="#" class="btn btn--whatsapp btn--lg js-whatsapp">
+          <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          Falar no WhatsApp
+        </a>
+
+        <ul class="contact__list">
+          <li>
+            <span class="contact__label">WhatsApp</span>
+            <a href="#" class="js-whatsapp">(51) 99192-4156</a>
+          </li>
+          <li>
+            <span class="contact__label">E-mail</span>
+            <a href="mailto:noxa.tecnologia@gmail.com">noxa.tecnologia@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <svg class="footer__logo" viewBox="0 12 250 64" fill="none" stroke="currentColor" stroke-width="12" aria-label="noxa">
+        <path d="M12 66V44a22 22 0 0 1 44 0v22"/>
+        <rect x="72" y="22" width="48" height="44" rx="22"/>
+        <path d="M136 22l42 44M178 22l-42 44"/>
+        <rect x="194" y="22" width="44" height="44" rx="22"/>
+        <path d="M238 22v44"/>
+      </svg>
+      <p>Sites, Google e anúncios para pessoas e empresas.</p>
+      <p class="footer__contact">
+        <a href="#" class="js-whatsapp">(51) 99192-4156</a>
+        <span aria-hidden="true">·</span>
+        <a href="mailto:noxa.tecnologia@gmail.com">noxa.tecnologia@gmail.com</a>
+      </p>
+      <p class="footer__copy">© <span id="year"></span> Noxa. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="#" class="whatsapp-float js-whatsapp" aria-label="Conversar no WhatsApp">
+    <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
