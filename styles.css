@@ -251,7 +251,7 @@ body.menu-open { overflow: hidden; }
 }
 .card__icon svg { width: 24px; height: 24px; fill: none; stroke: var(--accent); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .card > p { color: var(--muted); }
-.card__cta { margin-top: auto; }
+.card__cta { margin-top: auto; padding-inline: 1rem; white-space: nowrap; }
 .card .checklist { margin-bottom: 1.5rem; }
 
 /* Preço */
@@ -406,31 +406,45 @@ body.menu-open { overflow: hidden; }
 .faq details p { padding: 0 1.1rem 1.2rem; margin: 0; color: var(--muted); }
 
 /* ---------- Contato ---------- */
-.contact { display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 720px; }
-.contact__lead { color: var(--muted); font-size: 1.05rem; margin-bottom: 2rem; }
-.contact .btn--lg { width: 100%; }
+/* Última seção: segue o conteúdo em vez de ocupar uma tela inteira */
+.section.section--contact { min-height: 0; }
+.contact {
+  display: grid;
+  gap: 1.75rem;
+  padding: 1.75rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.contact__text h2 { margin-bottom: .4em; }
+.contact__lead { color: var(--muted); font-size: 1rem; margin: 0; }
+.contact__actions { display: flex; flex-direction: column; gap: 1rem; }
 .contact__list {
   list-style: none;
   padding: 0;
-  margin: 2.5rem 0 0;
-  display: grid;
-  gap: 1.25rem;
-  width: 100%;
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
 }
-.contact__list li { display: flex; flex-direction: column; align-items: center; }
+.contact__list li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: .25rem 1rem;
+  padding: .8rem 1rem;
+}
+.contact__list li + li { border-top: 1px solid var(--border); }
 .contact__label { font-size: .75rem; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
-.contact__list a { font-weight: 600; font-size: 1.05rem; word-break: break-word; }
+.contact__list a { font-weight: 600; font-size: .95rem; word-break: break-word; }
 .contact__list a:hover { color: var(--accent); }
 
 /* ---------- Footer ---------- */
-.footer { padding: 2.5rem 0 6rem; border-top: 1px solid var(--border); }
-.footer__inner { display: flex; flex-direction: column; align-items: center; text-align: center; gap: .5rem; }
-.footer__logo { height: 26px; width: auto; margin-bottom: .75rem; }
-.footer p { color: var(--muted); margin: 0; }
-.footer__contact { display: flex; flex-wrap: wrap; justify-content: center; gap: .25rem .6rem; }
-.footer__contact a { color: var(--text); }
-.footer__contact a:hover { color: var(--accent); }
-.footer__copy { font-size: .85rem; }
+/* padding-right reserva espaço para o botão flutuante no celular */
+.footer { padding: 1.25rem 0; border-top: 1px solid var(--border); }
+.footer__inner { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1.25rem; padding-right: 88px; }
+.footer__logo { height: 16px; width: auto; color: var(--muted); flex-shrink: 0; }
+.footer p { color: var(--muted); margin: 0; font-size: .85rem; }
 
 /* ---------- WhatsApp flutuante ---------- */
 .whatsapp-float {
@@ -515,7 +529,7 @@ body.menu-open { overflow: hidden; }
   .nav a:not(.btn):hover { color: var(--text); }
   .nav .btn { margin: 0; min-height: 40px; font-size: .9rem; }
 
-  .cards { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+  .cards { grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
   .card:hover { transform: translateY(-4px); }
 
   .combo {
@@ -536,11 +550,15 @@ body.menu-open { overflow: hidden; }
   .audience { grid-template-columns: 1fr 1fr; gap: 1.25rem; }
   .benefits { grid-template-columns: repeat(4, 1fr); padding: 1.5rem 2rem; }
 
-  .contact__lead { font-size: 1.15rem; }
-  .contact .btn--lg { width: auto; }
-  .contact__list { grid-template-columns: 1fr 1fr; }
+  .contact {
+    grid-template-columns: 1.3fr 1fr;
+    align-items: center;
+    gap: 3rem;
+    padding: 2.75rem 3rem;
+  }
+  .contact__lead { max-width: 46ch; }
 
-  .footer { padding-bottom: 3rem; }
+  .footer__inner { padding-right: 96px; justify-content: space-between; }
   .whatsapp-float { right: 24px; bottom: 24px; width: 60px; height: 60px; }
 }
 
@@ -599,9 +617,13 @@ body.menu-open { overflow: hidden; }
   .benefits span:not(.benefits__icon) { font-size: .92rem; }
 
   .faq summary { padding-block: .95rem; }
+}
 
-  .contact__lead { margin-bottom: 1.5rem; }
-  .contact__list { margin-top: 1.75rem; }
+/* Telas largas: os quatro serviços lado a lado */
+@media (min-width: 1200px) {
+  .cards { grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+  .card { padding-inline: 1.4rem; }
+  .card h3 { font-size: 1.1rem; }
 }
 
 /* Notebooks com tela baixa (ex.: 1366×768): aperta um pouco mais */
