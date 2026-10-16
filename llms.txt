@@ -1,37 +1,43 @@
-# Noxa
+# Noxa Tecnologia
 
-> Agência digital brasileira que cria sites institucionais, cadastra empresas no Google Meu Negócio, gerencia anúncios no Meta Ads e Google Ads e implanta atendentes de IA no WhatsApp. Atende clientes de qualquer cidade do Brasil, de forma 100% online. Clientes: profissionais autônomos (médicos, dentistas, advogados, psicólogos, personal trainers, fotógrafos) e pequenas e médias empresas (comércios, clínicas, restaurantes, escritórios, prestadores de serviço, indústrias).
+> Agência digital brasileira que ajuda profissionais e empresas a serem encontradas, lembradas e escolhidas na internet. A Noxa cria sites, melhora a presença no Google, gerencia anúncios digitais e configura atendimento com inteligência artificial no WhatsApp. Atendimento remoto para todo o Brasil.
 
-- Site: https://noxatecnologia.tech/
-- WhatsApp: +55 (51) 99192-4156 — https://wa.me/5551991924156
-- E-mail: noxa.tecnologia@gmail.com
-- País: Brasil
-- Área de atendimento: todo o Brasil (100% online)
-- Idioma: português
+## Quem somos
 
-## Serviços e preços
+A Noxa Tecnologia é uma agência digital com atendimento 100% online, por WhatsApp e videochamada. Reúne serviços essenciais de presença digital em um só lugar, com escopo e preço apresentados antes do início do trabalho.
 
-- **Criação de site institucional** — a partir de R$ 697 (pagamento único). Design exclusivo, otimizado para celular, botão de WhatsApp, domínio e hospedagem. Prazo: 7 a 20 dias.
-- **Empresa no Google (Google Meu Negócio / Google Business Profile)** — a partir de R$ 197 (pagamento único). Perfil criado e verificado, fotos, horários e serviços, otimização para buscas locais e Google Maps, estratégia para mais avaliações.
-- **Tráfego pago (Meta Ads e Google Ads)** — a partir de R$ 397/mês, verba dos anúncios à parte (paga direto às plataformas). Instagram, Facebook, Google e YouTube, artes e textos inclusos, relatório mensal.
-- **IA no WhatsApp** — a partir de R$ 197/mês + R$ 497 de implantação. Atendente virtual 24h treinado com o negócio do cliente: responde dúvidas e preços, agenda, qualifica clientes e passa para atendimento humano quando necessário.
-- **Pacote completo** — site + Google Meu Negócio + 1º mês de anúncios por R$ 997 (de R$ 1.291).
+## Serviços
+
+- **Sites institucionais** — design exclusivo e responsivo, botão de WhatsApp, domínio e hospedagem. A partir de R$ 697 em pagamento único. Prazo típico de 7 a 20 dias.
+- **Perfil da empresa no Google** (Google Meu Negócio / Google Business Profile) — criação, verificação e otimização de perfil, fotos, horários, serviços, presença no Google Maps e buscas locais. A partir de R$ 197 em pagamento único.
+- **Gestão de tráfego pago** — campanhas para Instagram, Facebook, Google e YouTube, com artes, textos e relatório mensal. A partir de R$ 397 por mês; a verba de anúncios é paga pelo cliente diretamente às plataformas.
+- **Atendente de IA no WhatsApp** — atendimento virtual 24 horas, treinado com informações do negócio para responder dúvidas, informar preços, agendar, qualificar contatos e encaminhar conversas para uma pessoa quando necessário. A partir de R$ 197 por mês, mais R$ 497 de implantação.
+- **Pacote completo de presença digital** — site institucional, perfil no Google e primeiro mês de gestão de anúncios por R$ 997 (preço apresentado no site: de R$ 1.291).
+
+## Diferenciais
+
+- Serviços digitais integrados em um único lugar.
+- Atendimento remoto para qualquer cidade do Brasil.
+- Proposta com escopo, prazo e valor definidos antes do início.
+- Aprovação do cliente durante as etapas do trabalho.
+- Soluções que podem ser contratadas separadamente ou combinadas.
+- Suporte, medição de resultados e ajustes contínuos.
+
+## Para quem
+
+Profissionais autônomos, prestadores de serviço e pequenas e médias empresas, incluindo clínicas, consultórios, comércios, restaurantes, escritórios e negócios locais que querem aumentar sua visibilidade e captar clientes pela internet.
 
 ## Como funciona
 
-1. Conversa sem compromisso pelo WhatsApp para entender o negócio.
-2. Proposta com prazo e valor definidos antes de começar.
-3. Execução com aprovação do cliente em cada etapa.
-4. Publicação, medição de resultados e ajustes contínuos.
+1. Conversa inicial sem compromisso para entender o negócio e os objetivos.
+2. Proposta com escopo, prazo e valor.
+3. Execução com aprovação do cliente nas etapas combinadas.
+4. Publicação, acompanhamento e ajustes.
 
-## Perguntas frequentes
+## Links e contato
 
-- **Atende na minha cidade?** Sim, qualquer cidade do Brasil, com processo 100% online por WhatsApp e videochamada.
-- **Precisa ter domínio e hospedagem?** Não, a Noxa registra o domínio e cuida da hospedagem e do certificado SSL.
-- **Empresa sem endereço físico pode aparecer no Google?** Sim, como empresa de área de atendimento, sem mostrar o endereço.
-- **Dá para contratar só um serviço?** Sim, cada serviço pode ser contratado separadamente.
-- **Dá para editar o site depois?** Sim, ou a Noxa faz as alterações com um plano de manutenção.
-
-## Contato para orçamento
-
-Orçamento grátis pelo WhatsApp: https://wa.me/5551991924156
+- Site oficial: https://noxatecnologia.tech/
+- WhatsApp e orçamento: [+55 (51) 99192-4156](https://wa.me/5551991924156)
+- E-mail: [noxa.tecnologia@gmail.com](mailto:noxa.tecnologia@gmail.com)
+- Atendimento: Brasil, 100% online
+- Idioma: português brasileiro
