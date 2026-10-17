@@ -33,7 +33,7 @@ nav.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setMe
 document.querySelector(".logo").addEventListener("click", (e) => {
   e.preventDefault();
   setMenu(false);
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
   history.replaceState(null, "", location.pathname + location.search);
 });
 window.matchMedia("(min-width: 900px)").addEventListener("change", (e) => e.matches && setMenu(false));
@@ -44,18 +44,39 @@ const onScroll = () => header.classList.toggle("is-scrolled", window.scrollY > 1
 window.addEventListener("scroll", onScroll, { passive: true });
 onScroll();
 
-// Animação ao aparecer na tela
-const io = new IntersectionObserver(
-  (entries) => {
+// O conteúdo fica visível mesmo se o navegador não oferecer animações.
+const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+const revealElements = document.querySelectorAll(
+  ".reveal, .hero__copy > *, .hero__visual, .section__head, .faq details, .footer__contact, .footer__inner > .btn"
+);
+
+if (!motionPreference.matches && "IntersectionObserver" in window) {
+  const io = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("is-visible");
         io.unobserve(entry.target);
       }
     });
-  },
-  { threshold: 0.15 }
-);
-document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+  }, { threshold: 0.08 });
+
+  revealElements.forEach((el) => {
+    el.classList.add("reveal");
+    // Sequências curtas por grupo, sem atrasar os blocos abaixo da dobra.
+    const siblings = [...el.parentElement.children].filter((child) => child.matches(
+      ".card, .hero__copy > *, .faq details"
+    ));
+    el.style.setProperty("--reveal-delay", `${Math.max(0, siblings.indexOf(el)) * 75}ms`);
+    el.classList.add("is-pending");
+    io.observe(el);
+  });
+
+  motionPreference.addEventListener("change", (event) => {
+    if (event.matches) {
+      io.disconnect();
+      revealElements.forEach((el) => el.classList.add("is-visible"));
+    }
+  });
+}
 
 document.getElementById("year").textContent = new Date().getFullYear();

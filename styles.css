@@ -242,8 +242,42 @@ body.menu-open { overflow: hidden; }
 .footer__contact p { margin: .45rem 0 0; color: rgba(246,244,237,.72); font-size: .92rem; }
 .footer__copyright { width: 100%; padding-top: .9rem; margin: .5rem 0 0 !important; border-top: 1px solid rgba(246,244,237,.2); color: rgba(246,244,237,.68); font-size: .8rem; }
 
-.reveal { opacity: 0; transform: translateY(12px); transition: opacity .45s ease, transform .45s ease; }
-.reveal.is-visible { opacity: 1; transform: none; }
+.reveal.is-pending {
+  transition: opacity .65s ease var(--reveal-delay, 0ms),
+    translate .65s cubic-bezier(.22, 1, .36, 1) var(--reveal-delay, 0ms),
+    transform .22s ease, box-shadow .22s ease;
+}
+.reveal.is-pending:not(.is-visible) { opacity: 0; translate: 0 22px; }
+.reveal.is-visible { opacity: 1; translate: none; }
+
+.btn > span[aria-hidden] { transition: transform .22s ease; }
+.btn:is(:hover, :focus-visible) > span[aria-hidden] { transform: translateX(4px); }
+.btn:active { transform: translate(4px, 4px); box-shadow: 1px 1px 0 var(--ink); }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--orange); outline-offset: 5px; }
+.nav a:not(.btn) { transition: color .2s ease; }
+.faq summary { transition: color .2s ease; }
+.faq summary:is(:hover, :focus-visible) { color: var(--orange); }
+.marquee:hover .marquee__track { animation-play-state: paused; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero__visual, .combo { transition: transform .22s ease, box-shadow .22s ease; }
+  .hero__visual img { transition: box-shadow .22s ease; }
+  .hero__sticker { animation: sticker-settle .8s cubic-bezier(.22, 1, .36, 1) .35s both; }
+  .faq details[open] p { animation: answer-enter .25s ease-out; }
+  @media (hover: hover) and (pointer: fine) {
+    .card:is(:hover, :focus-within) { transform: translateY(-4px); box-shadow: 6px 10px 0 var(--ink); }
+    .hero__visual:hover, .combo:is(:hover, :focus-within) { transform: translateY(-4px); }
+    .hero__visual:hover img, .combo:is(:hover, :focus-within) { box-shadow: 6px 10px 0 var(--ink); }
+  }
+}
+@keyframes sticker-settle {
+  from { opacity: 0; transform: translateY(12px) rotate(2deg); }
+  to { opacity: 1; transform: translateY(0) rotate(-4deg); }
+}
+@keyframes answer-enter {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
 @media (min-width: 600px) {
   :root { --gutter: 24px; }
@@ -285,6 +319,7 @@ body.menu-open { overflow: hidden; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .reveal { opacity: 1; transform: none; transition: none; }
-  .btn:hover, .card:hover { transform: none; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .reveal.is-pending { opacity: 1; translate: none; transform: none; }
+  .btn:hover, .btn:active, .card:hover, .btn:is(:hover, :focus-visible) > span[aria-hidden] { transform: none; }
 }
